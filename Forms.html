@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+        <legend>Personal Details</legend>
+            <label>Name</label> <input type="text" name="name" value="Name"><br><br>
+
+            Email: <input type="email" name="email" placeholder="Enter your Email"><br><br>
+
+            <label>Password</label> <input type="password" name="password" placeholder="Enter the password"><br><br>
+
+            <label>Gender</label> <input type="radio" name="gender" id="male"> <label for="male">Male</label> <input type="radio" name="gender" id="female"> <label for="female">Female</label><br><br>
+
+            <label>Hobbies</label> <input type="checkbox" name="hobbies" id="music"><label for="music">Music</label> <input type="checkbox" name="hobbies" id="dancing"><label for="dancing">Dancing</label><br><br>
+
+            <div>
+                <input type="date">
+            </div><br>
+            <label>Message</label> <br><textarea cols="50" rows="20"> </textarea><br><br>
+
+            <!-- <label>Country</label> <select name="country" size="3" multiple> -->
+                <!-- size is used to show the number of options and multiple is used to select multiple options  -->
+            <label>Country</label> <select name="country">
+                <option value="in">India</option>
+                <option value="ch">China</option>
+                <option value="am" selected>America</option>
+                <option value="rs">Russia</option>
+            </select><br><br>
+            
+            <label>Cars</label> <select>
+                <optgroup label="Toyota">
+                    <option>Innova</option>
+                    <option>Etios</option>
+                    <option>Fortuner</option>
+                </optgroup>
+                <optgroup label="Renault">
+                    <option>tata</option>
+                    <option>Duster</option>
+                    <option>Captur</option>
+                </optgroup>
+            </select><br><br>
+
+            <label>Cars</label> <input list="cars">
+                <datalist id="cars">
+                    <option value="Innova">
+                    <option value="Etios">
+                    <option value="Fortuner">
+                    <option value="Tata">
+                </datalist><br><br>
+
+            <!-- accept is new property to uplaod a particular file eg image or video -->
+            <!-- <label>Upload a file</label><input type="file" accept="image/*" name="file"> Here image is uploaded of any format. "audio/* is used to input audio" -->
+            <label>Upload a file</label><input type="file" accept="image/*" name="file"><br><br>
+
+            <!-- <input type="button" value="click"><br><br>  This type of buttton is used in javascript-->
+
+            <input type="submit" value="Save"> <!--Value is used to give the name to this button otherwise it will the default value of button -->
+
+            <input type="reset">
+
+            <!-- We can also make the button of a image  -->
+            <input type="image" src=""> <!--In src, we give the link of image and can give the width and height of the image -->
+        </fieldset>
+    </form>
+</body>
+</html>
